@@ -1,0 +1,9 @@
+echo '#DOQ String Search'
+echo 'Enter Directory /path/'
+read DIR
+echo $(pwd)'/'$DIR
+echo 'Enter string'
+read STR
+echo $STR
+grep -rnw $(pwd)/$DIR -e $STR
+

@@ -1,0 +1,12 @@
+source ~/scripts/dq_setting
+source .dq_git_config
+
+echo "#DOQ_BOX Git USB ADD - App Title:${REPO_TITLE} Branch:${PROJECT_BRANCH} App Version:${APP_VERSION}"
+
+sudo mount -o remount,rw /media/$USER/$USB
+
+chown -R $USER $USB_URL/$REPO_TITLE
+
+git init --bare $USB_URL/$REPO_TITLE
+git remote add usb $USB_URL/$REPO_TITLE
+echo '#DOQ USB Remote ADD Success '

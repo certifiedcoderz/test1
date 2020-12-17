@@ -1,0 +1,10 @@
+source ~/scripts/dq_setting
+echo 'Git USB PULL Repo Title'
+read  REPO_TITLE
+git init
+echo 'git initialized'
+echo 'pull remote url ' $USB_URL/$REPO_TITLE
+
+git remote add usb $USB_URL/$REPO_TITLE
+git pull usb master
+

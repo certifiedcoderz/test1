@@ -1,0 +1,12 @@
+USER='cali'
+#b_usb=''
+#b_usb='F26B-1047'
+#USB='FB43-F31A'
+USB='Lexar'
+#USB='MYUSBDRIVE'
+USB_URL=/media/$USER/$USB/www/repos
+BOX_URL=/home/$USER/www/cool/my_box
+# b_usb_url='/media/atl/14C2-CECF/www/repos'
+# b_usb_url='/media/atl/Lexar/www/repos'
+#
+

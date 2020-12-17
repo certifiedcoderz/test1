@@ -1,0 +1,33 @@
+source /home/cali/scripts/dq_setting
+
+# copy bashrc config
+rsync -av --exclude=".*" /home/$USER/.bashrc $BOX_URL/bashrc/
+echo '** Copy Bash Config File Success **'
+
+# copy vim config
+#rsync -av --exclude=".*" /home/$b_user/.vimrc $b_box_url/vim/
+rm -rf /home/$B_USER/.vim/view/*
+rsync -av --exclude=".*" /home/$B_USER/.vim/* $B_BOX_URL/vim/
+echo '** Copy Vim Config File Success **'
+
+# copy tmux config
+rsync -av --exclude=".*" /home/$USER/.tmux.conf $BOX_URL/tmux/
+echo '** Copy Tmux Config File Success **'
+
+# copy terminator config
+rsync -av --exclude=".*" /home/$USER/.config/terminator/config $BOX_URL/terminator/
+echo '** Copy Terminator Config File Success **'
+
+# copy scripts
+rsync -av --exclude=".*" /home/$USER/scripts $BOX_URL/scripts
+echo '** Copy Scripts File Success **'
+
+# copy rss
+rsync -av --exclude=".*" /home/$USER/.newsbeuter/config $BOX_URL/rss_notes
+echo '** Copy RSS Success **'
+
+
+
+
+
+

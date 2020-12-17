@@ -1,0 +1,8 @@
+cordova plugin add cordova-plugin-camera
+cordova plugin add cordova-plugin-crop
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-file-transfer
+cordova plugin add cordova-plugin-whitelist
+#cordova plugin add cordova-plugin-ployfill
+

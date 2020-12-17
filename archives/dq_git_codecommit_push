@@ -1,0 +1,7 @@
+source .dq_git_config
+
+echo "#DOQ_BOX GIT CODE COMMIT PUSH - App Title:${REPO_TITLE} Branch:${PROJECT_BRANCH} App Version:${APP_VERSION}"
+
+ git push -u ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/${REPO_TITLE} master
+echo 'GIT CODE COMMIT PUSH SUCCESS'
+

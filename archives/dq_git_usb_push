@@ -1,0 +1,8 @@
+source .dq_git_config
+
+echo "#DOQ_BOX Git USB PUSH - App Title:${REPO_TITLE} Branch:${PROJECT_BRANCH} App Version:${APP_VERSION}"
+
+git push usb $PROJECT_BRANCH --force
+
+echo 'GIT USB PUSH SUCCESS'
+

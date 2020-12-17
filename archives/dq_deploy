@@ -1,0 +1,7 @@
+source .dq_git_config
+
+echo "#DOQ_BOX SERVER PUSH - App Title:${REPO_TITLE} - Branch:${PROJECT_BRANCH} - App Version:${APP_VERSION}"
+rsync -rave "ssh -2 -i $AWS_KEY_PEM" $WEB_ROOT  admin@$DEPLOY_IP:$DEPLOY_LOC
+
+echo "Server Files Deploy Success!"
+

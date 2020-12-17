@@ -1,0 +1,15 @@
+source .dq_git_config
+
+echo "#DOQ_BOX Merge Branch and USB PUSH - App Title:${REPO_TITLE} - Branch:${PROJECT_BRANCH} - App Version:${APP_VERSION}"
+
+T_DATE=$(date +%F)
+git checkout master
+
+git merge $T_DATE
+
+git push usb master --force
+git checkout $T_DATE
+
+git push usb $T_DATE --force
+
+echo 'Git Branch Merge Success! current branch=' $T_DATE

@@ -1,0 +1,11 @@
+source .dq_git_config
+
+echo "#DOQ_BOX Git New Branch - App Title:${REPO_TITLE} - Branch:${PROJECT_BRANCH} - App Version:${APP_VERSION}"
+
+t_date=$(date +%F)
+sed -i "s/PROJECT_BRANCH=.*/PROJECT_BRANCH='${T_DATE}'/" .dq_git_config
+git branch  $T_DATE
+git checkout $T_DATE
+git branch
+echo "Git Branch Update Success new branch=' ${T_DATE}"
+
